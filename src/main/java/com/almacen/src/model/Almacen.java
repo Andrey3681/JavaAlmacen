@@ -49,8 +49,18 @@ public class Almacen {
         clientes.add(persona);
     }
 
+    //METODO PARA OBTENER VENTA
+    public Venta obtenerVenta(int codigo){
+        return ventas.stream().filter(venta -> venta.getCodigo()==codigo).findFirst().get();
+    }
+
     //METODO PARA AGREGAR VENTA
     public void agregarVenta(Venta venta){
         ventas.add(venta);
+    }
+
+    //METODO PARA ELEMINAR VENTA
+    public void eleminarVenta(Venta venta){
+        ventas.remove(venta);
     }
 }
