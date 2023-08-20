@@ -7,6 +7,7 @@ public class agregueProductosPerecederos {
     public Button EliminarProductoPerecedero;
 
     public void EventoAgregarProductoPerecedero(MouseEvent actionEvent) {
+
     }
 
     public void EventoEliminarProductoPerecedero(MouseEvent mouseEvent) {

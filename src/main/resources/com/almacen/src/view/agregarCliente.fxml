@@ -110,15 +110,15 @@
                               <Font name="Cambria Bold" size="12.0" />
                            </font>
                         </TextField>
-                        <Label text="Nit:" GridPane.rowIndex="2">
+                        <Label text="Tipo persona" GridPane.rowIndex="2">
                            <font>
                               <Font name="Calibri Bold" size="22.0" />
                            </font>
                         </Label>
-                        <SplitMenuButton fx:id="splitMenuButtonPersonas" mnemonicParsing="false" prefHeight="24.0" prefWidth="108.0" text="Tiene nit?" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <SplitMenuButton fx:id="splitMenuButtonPersonas" mnemonicParsing="false" prefHeight="24.0" prefWidth="108.0" text="persona" GridPane.columnIndex="1" GridPane.rowIndex="2">
                           <items>
-                            <MenuItem mnemonicParsing="false" text="Si, tengo Nit." />
-                            <MenuItem mnemonicParsing="false" text="No, tengo Nit." />
+                            <MenuItem mnemonicParsing="false" onAction="#menuNatural" text="natural" />
+                            <MenuItem mnemonicParsing="false" onAction="#menuJuridico" text="juridica" />
                           </items>
                            <font>
                               <Font name="Cambria" size="12.0" />
