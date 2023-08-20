@@ -19,23 +19,34 @@ public class Almacen {
         return productos;
     }
 
-    public void  agregarProducto(Producto producto){
+    //METODO PARA OBTENER UN PRODUCTO
+    public Producto obtenerProducto(int codigo){
+        return productos.stream().filter(producto -> producto.getCodigo()==codigo).findFirst().get();
+    }
+
+    //METODO PARA OBTENER UNA PERSONA
+
+    public Persona obtenerPersona(String documento){
+        return clientes.stream().filter(persona -> persona.getDocumento().equals(documento)).findFirst().get();
+    }
+
+    //METODO PARA ELEMINAR PERSONA
+    public void eleminarPersona(Persona persona){
+        clientes.remove(persona);
+    }
+
+    //METODO PARA ELIMINAR UN PRODUCTO
+    public void eleminarProducto(Producto producto){
+        productos.remove(producto);
+    }
+
+    //METODO PARA AGREGAR PRODUCTO
+    public void agregarProducto(Producto producto) {
         productos.add(producto);
     }
 
-    public void agregarPersona(Persona persona){
+    //METODO PARA AGREGAR PERSONA
+    public void agregarPersona(Persona persona) {
         clientes.add(persona);
-    }
-
-
-
-    public void eleminarPersona(Persona persona){
-        if(persona instanceof PersonaJuridica){
-
-        }
-        else {
-            clientes.stream().filter(persona1 -> persona1.getDocumento().equals(persona.getDocumento()))
-        }
-
     }
 }
