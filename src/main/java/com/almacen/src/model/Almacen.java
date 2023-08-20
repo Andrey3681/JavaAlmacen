@@ -5,6 +5,7 @@ import java.util.List;
 public class Almacen {
     List<Persona> clientes;
     List<Producto> productos;
+    List<Ventas> ventas;
 
     public Almacen() {
     }
