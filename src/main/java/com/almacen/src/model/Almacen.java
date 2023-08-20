@@ -1,12 +1,11 @@
 package com.almacen.src.model;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Almacen {
     List<Persona> clientes;
     List<Producto> productos;
-    List<Ventas> ventas;
+    List<Venta> ventas;
 
     public Almacen() {
     }
@@ -48,5 +47,10 @@ public class Almacen {
     //METODO PARA AGREGAR PERSONA
     public void agregarPersona(Persona persona) {
         clientes.add(persona);
+    }
+
+    //METODO PARA AGREGAR VENTA
+    public void agregarVenta(Venta venta){
+        ventas.add(venta);
     }
 }
